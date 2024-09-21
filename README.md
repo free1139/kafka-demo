@@ -1,1 +1,27 @@
 
+# Install
+Install docker
+``` shell
+sudo aptitude install docker.io
+```
+
+Using kafka in docker
+[see](https://kafka.apache.org/quickstart)
+```shell
+sudo docker pull apache/kafka:3.8.0
+sudo docker run -p 9092:9092 -d apache/kafka:3.8.0
+sudo docker ps
+```
+
+Using mysql in docker
+[see](https://kafka.apache.org/quickstart)
+```shell
+sudo docker pull mysql
+sudo docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3307:3306 -d mysql:latest
+sudo docker ps
+
+# login mysql test
+sudo aptitude install mysql-common
+mysql -P 3307 -uroot -p
+```
+
