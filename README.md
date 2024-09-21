@@ -27,3 +27,16 @@ create database push;
 exit
 ```
 
+# Run a demo
+shell 1
+```shell
+cd cmd/push-server
+go run main.go
+```
+
+shell 2
+```shell
+cd cmd/push-client
+go run main.go test.csv
+```
+
