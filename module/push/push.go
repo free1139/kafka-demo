@@ -5,7 +5,8 @@ import "time"
 const PushSvcName = "push_svc"
 
 type JobArg struct {
-	Records [][]string
+	CronTime time.Time
+	Records  [][]string
 }
 type JobRet struct {
 	Time time.Time
