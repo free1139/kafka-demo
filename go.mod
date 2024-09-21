@@ -6,6 +6,7 @@ require (
 	github.com/go-sql-driver/mysql v1.8.1
 	github.com/gwaylib/errors v0.0.2
 	github.com/gwaylib/qsql v0.0.2
+	github.com/gwaylib/rpctry v0.0.0-20240506130424-4ee92b3060e3
 	github.com/segmentio/kafka-go v0.4.47
 )
 

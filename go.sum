@@ -16,6 +16,8 @@ github.com/gwaylib/log v0.0.0-20190829041528-b6c28711ef53 h1:uBejqmckuot1HaHMe13
 github.com/gwaylib/log v0.0.0-20190829041528-b6c28711ef53/go.mod h1:FwuJtWmicMfzgmySG/QzJZL5J5qiMULuWgvT4qXZTgI=
 github.com/gwaylib/qsql v0.0.2 h1:8B3ODC+YtfU+MH0FPu9UHbO9VO6UNe5XecoxkvVOh0k=
 github.com/gwaylib/qsql v0.0.2/go.mod h1:daFdc+rEPTdxyvG3nERLizl7YvoCoD5ml9CaCv1hvJY=
+github.com/gwaylib/rpctry v0.0.0-20240506130424-4ee92b3060e3 h1:ipheWIYqywu9YB6T7fvh6XedVujUm0B/kyKflU4b0kw=
+github.com/gwaylib/rpctry v0.0.0-20240506130424-4ee92b3060e3/go.mod h1:WrMkMyOC8IakPU/hckLL34GPX2YHQeYCD1DK4gbLpYA=
 github.com/iwanbk/gobeanstalk v0.0.0-20160903043409-dbbb23937c31/go.mod h1:9ERvzhQ09s9SfQ7LjjF6FwUDnfkdZJUCN3vOUE+NtP8=
 github.com/jmoiron/sqlx v1.2.0 h1:41Ip0zITnmWNR/vHV+S4m+VoUivnWY5E4OJfLZjCJMA=
 github.com/jmoiron/sqlx v1.2.0/go.mod h1:1FEQNm3xlJgrMD+FBdI9+xvCksHtbpVBBw5dYhBSsks=
