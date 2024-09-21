@@ -20,8 +20,10 @@ sudo docker pull mysql
 sudo docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3307:3306 -d mysql:latest
 sudo docker ps
 
-# login mysql test
+# login mysql and create dateabase named push
 sudo aptitude install mysql-common
 mysql -P 3307 -uroot -p
+create database push;
+exit
 ```
 
