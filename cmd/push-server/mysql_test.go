@@ -9,8 +9,11 @@ import (
 )
 
 func TestMysqlDial(t *testing.T) {
-	db := NewMysql()
-	_, err := db.Exec(`
+	db, err := NewMysql("root:123456@tcp(127.0.0.1:3307)/push?timeout=30s&loc=Local&parseTime=true&allowOldPasswords=1")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := db.Exec(`
 CREATE TABLE IF NOT EXISTS testing 
 (
     username VARCHAR(32) NOT NULL,
@@ -18,8 +21,7 @@ CREATE TABLE IF NOT EXISTS testing
     created_at DATETIME NOT NULL DEFAULT NOW(),
     PRIMARY KEY(username)
 ) ENGINE=InnoDB;
-	`)
-	if err != nil {
+	`); err != nil {
 		t.Fatal(err)
 	}
 

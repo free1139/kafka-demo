@@ -11,9 +11,9 @@ type Kafka struct {
 	server string
 }
 
-func NewKafka() *Kafka {
+func NewKafka(uri string) *Kafka {
 	return &Kafka{
-		server: "localhost:9092",
+		server: uri,
 	}
 }
 

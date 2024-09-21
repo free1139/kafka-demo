@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println("vim-go")
+	addr := ":5001"
+	svc, err := NewService()
+	if err != nil {
+		panic(err)
+	}
+	svc.(*pushSvc).listen(addr)
 }
