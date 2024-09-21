@@ -14,7 +14,6 @@ sudo docker ps
 ```
 
 Using mysql in docker
-[see](https://kafka.apache.org/quickstart)
 ```shell
 sudo docker pull mysql
 sudo docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3307:3306 -d mysql:latest
