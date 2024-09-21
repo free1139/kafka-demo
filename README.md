@@ -24,6 +24,7 @@ sudo aptitude install mysql-common
 mysql -P 3307 -uroot -p
 create database push;
 exit
+mysql -P 3307 -uroot -p <./doc/sql/msg.sql
 ```
 
 # Run a demo
