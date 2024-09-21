@@ -27,15 +27,19 @@ exit
 ```
 
 # Run a demo
+test on debian
+
 shell 1
 ```shell
 cd cmd/push-server
-go run main.go
+go build
+./push-server
 ```
 
 shell 2
 ```shell
 cd cmd/push-client
-go run main.go test.csv
+go build
+./push-client ./test.csv
 ```
 

@@ -22,13 +22,18 @@ func main() {
 	if err != nil {
 		panic(errors.As(err))
 	}
-	fmt.Println(string(fileData))
+	records, err := ParseCsv(fileData)
+	if err != nil {
+		panic(errors.As(err))
+	}
 
 	c := rpctry.NewClient("127.0.0.1:5001")
-	in := &push.JobArg{}
+	in := &push.JobArg{
+		Records: records,
+	}
 	ret := &push.JobRet{}
 	if err := c.TryCall(push.PushSvcName+".CreateJob", in, ret); err != nil {
 		panic(err)
 	}
-	fmt.Println(*ret)
+	fmt.Println(ret.Time)
 }

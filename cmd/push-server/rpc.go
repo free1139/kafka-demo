@@ -3,6 +3,7 @@ package main
 import (
 	"net"
 	"net/rpc"
+	"time"
 
 	"kafka-demo/module/push"
 
@@ -52,5 +53,12 @@ func (svc *pushSvc) listen(addr string) {
 }
 
 func (svc *pushSvc) CreateJob(arg *push.JobArg, ret *push.JobRet) error {
-	return errors.New("TODO")
+	if len(arg.Records) == 0 {
+		return errors.New("no records")
+	}
+	ret.Time = time.Now()
+
+	// TODO: deal data
+
+	return nil
 }
